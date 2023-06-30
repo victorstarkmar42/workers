@@ -39,31 +39,31 @@ public class WorkersConfig {
 	
 	@Bean
 	public Person juan() {
-		Person person = new Person("Juan",jobService,"CWFVEWQER332");
+		Person person = new Person("JUAN",jobService,"CWFVEWQER332");
 		return person;
 	}
 	
 	@Bean
 	public Person jose() {
-		Person person2 = new Person("Jose",policemanJobservice,"CWFVEWQER334");
+		Person person2 = new Person("JOSE",policemanJobservice,"CWFVEWQER334");
 		return person2;
 	}
 	
 	@Bean
 	public Person aylin() {
-		Person person3 = new Person("Aylin",capeServiceImpl,"CWFVEWQER334");
+		Person person3 = new Person("AYLIN",capeServiceImpl,"CWFVEWQER334");
 		return person3;
 	}
 	
 	@Bean
 	public Person manuel() {
-		Person person4 = new Person("Manuel",satintServiceImpl,"CWFVEWQER334");
+		Person person4 = new Person("MANUEL",satintServiceImpl,"CWFVEWQER334");
 		return person4;
 	}
 	
 	@Bean
 	public Person adrian() {
-		Person person5 = new Person("Adrian",sergeantServiceImpl,"CWFVEWQER334");
+		Person person5 = new Person("ADRIAN",sergeantServiceImpl,"CWFVEWQER334");
 		return person5;
 	}
 	
