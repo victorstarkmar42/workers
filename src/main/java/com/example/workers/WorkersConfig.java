@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.example.workers.people.Person;
 import com.example.workers.service.JobService;
+import com.example.workers.service.MilitaryService;
 
 @Configuration
 public class WorkersConfig {
@@ -17,6 +18,20 @@ public class WorkersConfig {
 	@Autowired
 	@Qualifier("policemanServiceImpl")
 	private JobService policemanJobservice;
+	
+	@Autowired   //inyecta las dependecias
+	@Qualifier("capeServiceImpl")
+	private MilitaryService capeServiceImpl;
+	
+	@Autowired   //inyecta las dependecias
+	@Qualifier("satintServiceImpl")
+	private MilitaryService satintServiceImpl;
+	
+	@Autowired   //inyecta las dependecias
+	@Qualifier("sergeantServiceImpl")
+	private MilitaryService sergeantServiceImpl;
+	
+	
 	/**@Bean
 	public FirefighterServiceImpl firefighterService() {
 		return new FirefighterServiceImpl();
@@ -32,6 +47,24 @@ public class WorkersConfig {
 	public Person jose() {
 		Person person2 = new Person("Jose",policemanJobservice,"CWFVEWQER334");
 		return person2;
+	}
+	
+	@Bean
+	public Person aylin() {
+		Person person3 = new Person("Aylin",capeServiceImpl,"CWFVEWQER334");
+		return person3;
+	}
+	
+	@Bean
+	public Person manuel() {
+		Person person4 = new Person("Manuel",satintServiceImpl,"CWFVEWQER334");
+		return person4;
+	}
+	
+	@Bean
+	public Person adrian() {
+		Person person5 = new Person("Adrian",sergeantServiceImpl,"CWFVEWQER334");
+		return person5;
 	}
 	
 }
